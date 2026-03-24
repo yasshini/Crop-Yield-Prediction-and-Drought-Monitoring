@@ -1,0 +1,311 @@
+:root {
+    --primary-green: #2e7d32;
+    --deep-green: #0d3d0f;
+    --soft-green: #f2f7f1;
+    --pale-green: #e6f5ea;
+    --light-glass: rgba(255, 255, 255, 0.3);
+    --card-bg: rgba(255, 255, 255, 0.25);
+    --text-main: #333;
+    --text-light: #555;
+    --text-muted: #777;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--soft-green);
+    padding-top: 120px;
+    color: var(--text-main);
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header */
+header {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: var(--light-glass);
+    border-bottom: 1px solid rgba(221, 221, 221, 0.29);
+    box-shadow: 0 4px 8px var(--shadow);
+    backdrop-filter: blur(10px);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--primary-green);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: var(--deep-green);
+    text-align: center;
+    flex-grow: 1;
+}
+
+.header .back-btn {
+    background: var(--light-glass);
+    padding: 8px 15px;
+    border-radius: 12px;
+    color: #121212;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px var(--shadow);
+    transition: background 0.3s, color 0.3s;
+}
+
+.header .back-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #1b5e20;
+}
+
+
+/* Form */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    background: var(--light-glass);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px var(--shadow);
+    backdrop-filter: blur(10px);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-size: 1rem;
+}
+
+.input-group select,
+.input-group input {
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(44, 62, 80, 0.2);
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #2c3e50;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s ease;
+    backdrop-filter: blur(6px);
+}
+
+.input-group select option {
+    background: #f9f9f9;
+    color: var(--text-main);
+}
+
+.input-group select:focus,
+.input-group input:focus {
+    border-color: #4CAF50;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Submit Button */
+.btn-submit {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    background-color: var(--primary-green);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #388e3c;
+}
+
+.glass-card {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px var(--shadow);
+}
+
+/* Side by Side Layout */
+.side-by-side {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 30px;
+}
+
+/* NPK Rings */
+.npk-rings-horizontal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 550px;
+    padding: 10px 0;
+}
+
+.npk-ring-box {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 6px 20px var(--shadow);
+    border-radius: 15px;
+    padding: 15px;
+    width: 160px;
+    text-align: center;
+}
+
+.ring-chart-container {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    background: transparent;
+}
+
+.ring-chart-container .npk-value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-green);
+}
+
+.ring-chart-container p,
+.npk-ring-box p {
+    margin-top: 8px;
+    font-weight: 600;
+    color: var(--primary-green);
+    font-size: 14px;
+}
+
+/* Climate Card */
+.climate-card {
+    max-width: 450px;
+    padding: 20px;
+    border-radius: 16px;
+    background: var(--card-bg);
+    box-shadow: 0 4px 10px var(--shadow);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    backdrop-filter: blur(8px);
+}
+
+.climate-card h3 {
+    font-size: 20px;
+    color: var(--primary-green);
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.climate-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.climate-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-main);
+    width: 100%;
+}
+
+.icon {
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+.label {
+    text-align: center;
+    color: var(--text-light);
+}
+
+.value {
+    font-weight: bold;
+    color: #222;
+    margin-left: 5px;
+}
+
+.unit {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+/* Yield Card */
+.yield-card {
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.yield-highlight {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary-green);
+}
+
+.next-crop,
+.ai-box {
+    font-size: 16px;
+    margin-top: 15px;
+    color: #0b140c;
+}
+
+/* Rainfall Section */
+.best-months {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: var(--primary-green);
+}
+
+.ai-tips {
+    font-style: italic;
+    font-size: 15px;
+    color: var(--text-light);
+    margin-top: 10px;
+}
+
+/* Chart.js */
+canvas {
+    border-radius: 10px;
+    padding: 10px;
+    background: transparent !important;
+}

@@ -1,0 +1,309 @@
+State,District,Market (Mandi),Commodity,Min Price (?/quintal),Max Price (?/quintal),Modal Price (?/quintal),Year,Quantity
+Andhra Pradesh,Guntur,Guntur Mandi,Rice,1800,2200,2000,10-02-2018,Quintal
+Andhra Pradesh,Guntur,Guntur Mandi,Chilli,12000,15000,13500,14-06-2018,Quintal
+Andhra Pradesh,Nellore,Nellore Mandi,Cotton,4500,5000,4750,05-11-2018,Quintal
+Andhra Pradesh,Guntur,Guntur Mandi,Rice,1900,2300,2100,20-01-2019,Quintal
+Andhra Pradesh,Guntur,Guntur Mandi,Chilli,13000,16000,14500,18-04-2019,Quintal
+Andhra Pradesh,Kurnool,Kurnool Mandi,Cotton,4700,5200,4950,22-09-2019,Quintal
+Andhra Pradesh,Prakasam,Ongole Mandi,Maize,1400,1800,1600,15-03-2020,Quintal
+Andhra Pradesh,Prakasam,Ongole Mandi,Groundnut,4000,4500,4250,11-07-2020,Quintal
+Andhra Pradesh,Anantapur,Anantapur Mandi,Groundnut,4200,4800,4500,25-02-2021,Quintal
+Andhra Pradesh,Anantapur,Anantapur Mandi,Cotton,4600,5100,4850,19-08-2021,Quintal
+Andhra Pradesh,Krishna,Vijayawada Mandi,Rice,2000,2400,2200,30-01-2022,Quintal
+Andhra Pradesh,Krishna,Vijayawada Mandi,Chilli,14000,17000,15500,21-05-2022,Quintal
+Andhra Pradesh,Kadapa,Kadapa Mandi,Cotton,4900,5400,5150,10-03-2023,Quintal
+Andhra Pradesh,Kadapa,Kadapa Mandi,Groundnut,4300,4800,4550,04-09-2023,Quintal
+Assam,Guwahati,Guwahati Mandi,Rice,1500,1900,1700,12-01-2018,Quintal
+Assam,Guwahati,Guwahati Mandi,Tea,200,300,250,22-05-2018,Quintal
+Assam,Dibrugarh,Dibrugarh Mandi,Mustard Seed,4000,4500,4250,15-09-2018,Quintal
+Assam,Guwahati,Guwahati Mandi,Rice,1600,2000,1800,03-02-2019,Quintal
+Assam,Guwahati,Guwahati Mandi,Tea,220,320,270,18-06-2019,Quintal
+Assam,Silchar,Silchar Mandi,Jute,3200,3700,3450,25-10-2019,Quintal
+Assam,Tezpur,Tezpur Mandi,Mustard Seed,4100,4600,4350,05-03-2020,Quintal
+Assam,Tezpur,Tezpur Mandi,Rice,1700,2100,1900,20-07-2020,Quintal
+Assam,Jorhat,Jorhat Mandi,Rice,1650,2050,1850,11-04-2021,Quintal
+Assam,Jorhat,Jorhat Mandi,Tea,240,340,290,16-08-2021,Quintal
+Assam,Tinsukia,Tinsukia Mandi,Jute,3300,3800,3550,22-02-2022,Quintal
+Assam,Tinsukia,Tinsukia Mandi,Mustard Seed,4200,4700,4450,29-06-2022,Quintal
+Assam,Nagaon,Nagaon Mandi,Rice,1800,2200,2000,18-03-2023,Quintal
+Assam,Nagaon,Nagaon Mandi,Tea,250,350,300,07-09-2023,Quintal
+Bihar,Patna,Patna Mandi,Maize,1600,2000,1800,08-02-2018,Quintal
+Bihar,Patna,Patna Mandi,Rice,1400,1800,1600,25-06-2018,Quintal
+Bihar,Muzaffarpur,Muzaffarpur Mandi,Wheat,1700,2100,1900,12-10-2018,Quintal
+Bihar,Gaya,Gaya Mandi,Pulses,5000,5500,5250,15-01-2019,Quintal
+Bihar,Patna,Patna Mandi,Maize,1700,2100,1900,10-05-2019,Quintal
+Bihar,Muzaffarpur,Muzaffarpur Mandi,Rice,1500,1900,1700,27-09-2019,Quintal
+Bihar,Bhagalpur,Bhagalpur Mandi,Wheat,1800,2200,2000,14-02-2020,Quintal
+Bihar,Bhagalpur,Bhagalpur Mandi,Pulses,5100,5600,5350,19-06-2020,Quintal
+Bihar,Purnea,Purnea Mandi,Maize,1650,2050,1850,02-03-2021,Quintal
+Bihar,Purnea,Purnea Mandi,Rice,1550,1950,1750,22-07-2021,Quintal
+Bihar,Darbhanga,Darbhanga Mandi,Wheat,1850,2250,2050,08-01-2022,Quintal
+Bihar,Darbhanga,Darbhanga Mandi,Pulses,5200,5700,5450,14-05-2022,Quintal
+Bihar,Ara,Ara Mandi,Maize,1750,2150,1950,04-04-2023,Quintal
+Bihar,Ara,Ara Mandi,Rice,1600,2000,1800,21-08-2023,Quintal
+Chhattisgarh,Raipur,Raipur Mandi,Paddy,1600,2000,1800,18-01-2018,Quintal
+Chhattisgarh,Raipur,Raipur Mandi,Maize,1400,1800,1600,09-05-2018,Quintal
+Chhattisgarh,Bilaspur,Bilaspur Mandi,Wheat,1700,2100,1900,03-10-2018,Quintal
+Chhattisgarh,Durg,Durg Mandi,Pulses,4500,5000,4750,21-02-2019,Quintal
+Chhattisgarh,Durg,Durg Mandi,Paddy,1700,2100,1900,13-06-2019,Quintal
+Chhattisgarh,Raigarh,Raigarh Mandi,Maize,1500,1900,1700,07-11-2019,Quintal
+Chhattisgarh,Korba,Korba Mandi,Wheat,1800,2200,2000,14-03-2020,Quintal
+Chhattisgarh,Korba,Korba Mandi,Pulses,4600,5100,4850,05-08-2020,Quintal
+Chhattisgarh,Rajnandgaon,Rajnandgaon Mandi,Paddy,1750,2200,1975,27-02-2021,Quintal
+Chhattisgarh,Rajnandgaon,Rajnandgaon Mandi,Wheat,1900,2300,2100,18-06-2021,Quintal
+Chhattisgarh,Jagdalpur,Jagdalpur Mandi,Maize,1600,2000,1800,10-03-2022,Quintal
+Chhattisgarh,Jagdalpur,Jagdalpur Mandi,Pulses,4700,5200,4950,23-07-2022,Quintal
+Chhattisgarh,Ambikapur,Ambikapur Mandi,Paddy,1800,2300,2050,11-04-2023,Quintal
+Chhattisgarh,Ambikapur,Ambikapur Mandi,Wheat,2000,2500,2250,01-09-2023,Quintal
+Gujarat,Ahmedabad,Ahmedabad Mandi,Cotton,4800,5200,5000,11-02-2018,Quintal
+Gujarat,Ahmedabad,Ahmedabad Mandi,Groundnut,4000,4500,4250,07-06-2018,Quintal
+Gujarat,Rajkot,Rajkot Mandi,Wheat,1700,2100,1900,03-11-2018,Quintal
+Gujarat,Surat,Surat Mandi,Bajra,1300,1600,1450,12-03-2019,Quintal
+Gujarat,Surat,Surat Mandi,Cotton,4900,5400,5150,18-07-2019,Quintal
+Gujarat,Vadodara,Vadodara Mandi,Groundnut,4200,4700,4450,30-10-2019,Quintal
+Gujarat,Bhavnagar,Bhavnagar Mandi,Wheat,1800,2200,2000,25-01-2020,Quintal
+Gujarat,Bhavnagar,Bhavnagar Mandi,Bajra,1350,1700,1525,28-05-2020,Quintal
+Gujarat,Junagadh,Junagadh Mandi,Cotton,5000,5500,5250,05-03-2021,Quintal
+Gujarat,Junagadh,Junagadh Mandi,Groundnut,4300,4800,4550,09-08-2021,Quintal
+Gujarat,Mehsana,Mehsana Mandi,Wheat,1900,2300,2100,15-04-2022,Quintal
+Gujarat,Mehsana,Mehsana Mandi,Cotton,5100,5600,5350,12-09-2022,Quintal
+Gujarat,Jamnagar,Jamnagar Mandi,Groundnut,4400,4900,4650,20-02-2023,Quintal
+Gujarat,Jamnagar,Jamnagar Mandi,Bajra,1400,1750,1575,19-07-2023,Quintal
+Haryana,Karnal,Karnal Mandi,Wheat,1700,2100,1900,14-01-2018,Quintal
+Haryana,Karnal,Karnal Mandi,Paddy,1600,2000,1800,22-04-2018,Quintal
+Haryana,Hisar,Hisar Mandi,Mustard Seed,4200,4600,4400,05-08-2018,Quintal
+Haryana,Panipat,Panipat Mandi,Bajra,1400,1700,1550,18-02-2019,Quintal
+Haryana,Panipat,Panipat Mandi,Wheat,1750,2150,1950,11-06-2019,Quintal
+Haryana,Rohtak,Rohtak Mandi,Paddy,1650,2050,1850,23-09-2019,Quintal
+Haryana,Sirsa,Sirsa Mandi,Mustard Seed,4300,4700,4500,03-03-2020,Quintal
+Haryana,Sirsa,Sirsa Mandi,Cotton,4500,5000,4750,18-07-2020,Quintal
+Haryana,Kurukshetra,Kurukshetra Mandi,Wheat,1800,2200,2000,10-02-2021,Quintal
+Haryana,Kurukshetra,Kurukshetra Mandi,Bajra,1450,1750,1600,25-06-2021,Quintal
+Haryana,Yamunanagar,Yamunanagar Mandi,Paddy,1700,2100,1900,09-01-2022,Quintal
+Haryana,Yamunanagar,Yamunanagar Mandi,Mustard Seed,4400,4800,4600,16-05-2022,Quintal
+Haryana,Ambala,Ambala Mandi,Cotton,4600,5100,4850,07-03-2023,Quintal
+Haryana,Ambala,Ambala Mandi,Wheat,1850,2250,2050,20-08-2023,Quintal
+Himachal Pradesh,Shimla,Shimla Mandi,Apple,4000,6000,5000,20-01-2018,Quintal
+Himachal Pradesh,Shimla,Shimla Mandi,Potato,1200,1500,1350,15-05-2018,Quintal
+Himachal Pradesh,Kullu,Kullu Mandi,Rice,2500,3000,2750,10-09-2018,Quintal
+Himachal Pradesh,Solan,Solan Mandi,Apple,4500,6500,5500,02-03-2019,Quintal
+Himachal Pradesh,Solan,Solan Mandi,Maize,1300,1600,1450,12-07-2019,Quintal
+Himachal Pradesh,Mandi,Mandi Mandi,Wheat,1700,2100,1900,03-11-2019,Quintal
+Himachal Pradesh,Kangra,Kangra Mandi,Barley,1400,1800,1600,18-02-2020,Quintal
+Himachal Pradesh,Kangra,Kangra Mandi,Rice,2600,3100,2850,29-06-2020,Quintal
+Himachal Pradesh,Chamba,Chamba Mandi,Apple,4800,6800,5800,05-04-2021,Quintal
+Himachal Pradesh,Chamba,Chamba Mandi,Maize,1350,1700,1525,14-08-2021,Quintal
+Himachal Pradesh,Bilaspur,Bilaspur Mandi,Wheat,1750,2200,1975,08-03-2022,Quintal
+Himachal Pradesh,Bilaspur,Bilaspur Mandi,Potato,1250,1600,1425,22-07-2022,Quintal
+Himachal Pradesh,Hamirpur,Hamirpur Mandi,Apple,5000,7000,6000,11-03-2023,Quintal
+Himachal Pradesh,Hamirpur,Hamirpur Mandi,Barley,1500,1900,1700,05-09-2023,Quintal
+Jammu and Kashmir,Srinagar,Srinagar Mandi,Apple,4500,6000,5250,25-01-2018,Quintal
+Jammu and Kashmir,Srinagar,Srinagar Mandi,Saffron,150000,200000,175000,19-05-2018,Quintal
+Jammu and Kashmir,Anantnag,Anantnag Mandi,Rice,2200,2800,2500,12-09-2018,Quintal
+Jammu and Kashmir,Baramulla,Baramulla Mandi,Walnut,30000,35000,32500,06-03-2019,Quintal
+Jammu and Kashmir,Baramulla,Baramulla Mandi,Apple,4700,6200,5450,25-07-2019,Quintal
+Jammu and Kashmir,Jammu,Jammu Mandi,Maize,1500,2000,1750,08-11-2019,Quintal
+Jammu and Kashmir,Pulwama,Pulwama Mandi,Saffron,160000,210000,185000,28-02-2020,Quintal
+Jammu and Kashmir,Pulwama,Pulwama Mandi,Walnut,31000,36000,33500,14-07-2020,Quintal
+Jammu and Kashmir,Udhampur,Udhampur Mandi,Apple,4900,6400,5650,20-04-2021,Quintal
+Jammu and Kashmir,Udhampur,Udhampur Mandi,Rice,2300,2900,2600,30-08-2021,Quintal
+Jammu and Kashmir,Kathua,Kathua Mandi,Maize,1600,2100,1850,16-03-2022,Quintal
+Jammu and Kashmir,Kathua,Kathua Mandi,Walnut,32000,37000,34500,25-07-2022,Quintal
+Jammu and Kashmir,Shopian,Shopian Mandi,Saffron,170000,220000,195000,02-04-2023,Quintal
+Jammu and Kashmir,Shopian,Shopian Mandi,Apple,5100,6600,5850,11-09-2023,Quintal
+Karnataka,Bangalore,Bangalore Mandi,Rice,1600,2000,1800,05-02-2018,Quintal
+Karnataka,Bangalore,Bangalore Mandi,Ragi,2200,2600,2400,18-05-2018,Quintal
+Karnataka,Mysore,Mysore Mandi,Coffee,30000,35000,32500,25-09-2018,Quintal
+Karnataka,Hubli,Hubli Mandi,Groundnut,4000,4500,4250,30-01-2019,Quintal
+Karnataka,Hubli,Hubli Mandi,Maize,1400,1800,1600,12-06-2019,Quintal
+Karnataka,Mangalore,Mangalore Mandi,Arecanut,15000,18000,16500,08-10-2019,Quintal
+Karnataka,Davangere,Davangere Mandi,Rice,1700,2100,1900,19-03-2020,Quintal
+Karnataka,Davangere,Davangere Mandi,Cotton,4500,5000,4750,22-07-2020,Quintal
+Karnataka,Shimoga,Shimoga Mandi,Groundnut,4100,4600,4350,14-02-2021,Quintal
+Karnataka,Shimoga,Shimoga Mandi,Ragi,2300,2700,2500,10-06-2021,Quintal
+Karnataka,Belgaum,Belgaum Mandi,Sugarcane,2500,3000,2750,24-01-2022,Quintal
+Karnataka,Belgaum,Belgaum Mandi,Cotton,4600,5100,4850,29-05-2022,Quintal
+Karnataka,Gulbarga,Gulbarga Mandi,Rice,1800,2200,2000,13-03-2023,Quintal
+Karnataka,Gulbarga,Gulbarga Mandi,Maize,1500,1900,1700,17-08-2023,Quintal
+Kerala,Ernakulam,Ernakulam Mandi,Coconut,8000,9000,8500,11-02-2018,Quintal
+Kerala,Ernakulam,Ernakulam Mandi,Pepper,40000,45000,42500,23-05-2018,Quintal
+Kerala,Wayanad,Wayanad Mandi,Coffee,32000,37000,34500,14-09-2018,Quintal
+Kerala,Thrissur,Thrissur Mandi,Coconut,8500,9500,9000,05-03-2019,Quintal
+Kerala,Thrissur,Thrissur Mandi,Rubber,12000,14000,13000,19-07-2019,Quintal
+Kerala,Idukki,Idukki Mandi,Tea,250,300,275,02-11-2019,Quintal
+Kerala,Kozhikode,Kozhikode Mandi,Coconut,8700,9700,9200,27-02-2020,Quintal
+Kerala,Kozhikode,Kozhikode Mandi,Pepper,42000,47000,44500,30-06-2020,Quintal
+Kerala,Palakkad,Palakkad Mandi,Rubber,12500,14500,13500,09-03-2021,Quintal
+Kerala,Palakkad,Palakkad Mandi,Tea,260,310,285,18-07-2021,Quintal
+Kerala,Kannur,Kannur Mandi,Coconut,8800,9800,9300,11-03-2022,Quintal
+Kerala,Kannur,Kannur Mandi,Coffee,33000,38000,35500,21-07-2022,Quintal
+Kerala,Alappuzha,Alappuzha Mandi,Pepper,43000,48000,45500,03-04-2023,Quintal
+Kerala,Alappuzha,Alappuzha Mandi,Rubber,13000,15000,14000,08-09-2023,Quintal
+Madhya Pradesh,Indore,Indore Mandi,Soybean,3200,3700,3450,22-01-2018,Quintal
+Madhya Pradesh,Indore,Indore Mandi,Wheat,1700,2100,1900,13-05-2018,Quintal
+Madhya Pradesh,Bhopal,Bhopal Mandi,Maize,1400,1800,1600,09-09-2018,Quintal
+Madhya Pradesh,Gwalior,Gwalior Mandi,Bajra,1300,1700,1500,20-02-2019,Quintal
+Madhya Pradesh,Gwalior,Gwalior Mandi,Soybean,3400,3900,3650,15-06-2019,Quintal
+Madhya Pradesh,Jabalpur,Jabalpur Mandi,Wheat,1750,2150,1950,01-11-2019,Quintal
+Madhya Pradesh,Ujjain,Ujjain Mandi,Maize,1500,1900,1700,17-03-2020,Quintal
+Madhya Pradesh,Ujjain,Ujjain Mandi,Cotton,4200,4700,4450,10-07-2020,Quintal
+Madhya Pradesh,Sagar,Sagar Mandi,Soybean,3500,4000,3750,12-02-2021,Quintal
+Madhya Pradesh,Sagar,Sagar Mandi,Wheat,1800,2200,2000,21-06-2021,Quintal
+Madhya Pradesh,Rewa,Rewa Mandi,Maize,1600,2000,1800,27-01-2022,Quintal
+Madhya Pradesh,Rewa,Rewa Mandi,Cotton,4300,4800,4550,24-05-2022,Quintal
+Madhya Pradesh,Ratlam,Ratlam Mandi,Soybean,3600,4100,3850,06-04-2023,Quintal
+Madhya Pradesh,Ratlam,Ratlam Mandi,Wheat,1900,2300,2100,28-08-2023,Quintal
+Maharashtra,Pune,Pune Mandi,Cotton,4500,5500,5000,18-01-2018,Quintal
+Maharashtra,Pune,Pune Mandi,Sugarcane,2500,3000,2750,12-05-2018,Quintal
+Maharashtra,Nashik,Nashik Mandi,Onion,1000,1500,1250,22-09-2018,Quintal
+Maharashtra,Nagpur,Nagpur Mandi,Soybean,3200,3700,3450,11-02-2019,Quintal
+Maharashtra,Nagpur,Nagpur Mandi,Cotton,4700,5200,4950,09-06-2019,Quintal
+Maharashtra,Aurangabad,Aurangabad Mandi,Wheat,1800,2200,2000,25-10-2019,Quintal
+Maharashtra,Kolhapur,Kolhapur Mandi,Sugarcane,2600,3100,2850,14-03-2020,Quintal
+Maharashtra,Kolhapur,Kolhapur Mandi,Maize,1500,1900,1700,18-07-2020,Quintal
+Maharashtra,Solapur,Solapur Mandi,Jowar,1300,1700,1500,16-02-2021,Quintal
+Maharashtra,Solapur,Solapur Mandi,Bajra,1200,1600,1400,29-06-2021,Quintal
+Maharashtra,Amravati,Amravati Mandi,Cotton,4800,5300,5050,21-01-2022,Quintal
+Maharashtra,Amravati,Amravati Mandi,Soybean,3300,3800,3550,27-05-2022,Quintal
+Maharashtra,Mumbai,Mumbai Mandi,Wheat,1900,2400,2150,09-03-2023,Quintal
+Maharashtra,Mumbai,Mumbai Mandi,Onion,1100,1600,1350,14-08-2023,Quintal
+Manipur,Imphal East,Imphal Mandi,Rice,2000,2500,2250,28-01-2018,Quintal
+Manipur,Imphal East,Imphal Mandi,Mustard Seed,4000,4500,4250,05-06-2018,Quintal
+Manipur,Thoubal,Thoubal Mandi,Potato,1800,2200,2000,15-10-2018,Quintal
+Manipur,Imphal West,Imphal Mandi,Rice,2100,2600,2350,02-03-2019,Quintal
+Manipur,Imphal West,Imphal Mandi,Maize,1500,1800,1650,19-07-2019,Quintal
+Manipur,Bishnupur,Bishnupur Mandi,Mustard Seed,4200,4700,4450,12-11-2019,Quintal
+Manipur,Imphal East,Imphal Mandi,Potato,1900,2300,2100,24-02-2020,Quintal
+Manipur,Imphal East,Imphal Mandi,Rice,2200,2700,2450,01-07-2020,Quintal
+Manipur,Thoubal,Thoubal Mandi,Maize,1600,2000,1800,07-04-2021,Quintal
+Manipur,Thoubal,Thoubal Mandi,Mustard Seed,4300,4800,4550,16-08-2021,Quintal
+Manipur,Bishnupur,Bishnupur Mandi,Potato,2000,2400,2200,03-03-2022,Quintal
+Manipur,Bishnupur,Bishnupur Mandi,Rice,2300,2800,2550,14-07-2022,Quintal
+Manipur,Imphal West,Imphal Mandi,Maize,1700,2100,1900,01-04-2023,Quintal
+Manipur,Imphal West,Imphal Mandi,Mustard Seed,4400,4900,4650,26-08-2023,Quintal
+NCT of Delhi,Central Delhi,Azadpur Mandi,Onion,1200,1500,1350,02-02-2018,Quintal
+NCT of Delhi,Central Delhi,Azadpur Mandi,Potato,1000,1300,1150,10-06-2018,Quintal
+NCT of Delhi,North Delhi,Narela Mandi,Wheat,1800,2200,2000,20-10-2018,Quintal
+NCT of Delhi,East Delhi,Ghazipur Mandi,Rice,1600,2000,1800,07-03-2019,Quintal
+NCT of Delhi,East Delhi,Ghazipur Mandi,Onion,1300,1600,1450,15-07-2019,Quintal
+NCT of Delhi,South Delhi,Okhla Mandi,Potato,1100,1400,1250,05-11-2019,Quintal
+NCT of Delhi,West Delhi,Najafgarh Mandi,Wheat,1900,2300,2100,29-01-2020,Quintal
+NCT of Delhi,West Delhi,Najafgarh Mandi,Rice,1700,2100,1900,03-06-2020,Quintal
+NCT of Delhi,Central Delhi,Azadpur Mandi,Onion,1400,1700,1550,08-02-2021,Quintal
+NCT of Delhi,Central Delhi,Azadpur Mandi,Potato,1200,1500,1350,19-06-2021,Quintal
+NCT of Delhi,North Delhi,Narela Mandi,Wheat,2000,2400,2200,13-02-2022,Quintal
+NCT of Delhi,North Delhi,Narela Mandi,Rice,1800,2200,2000,27-06-2022,Quintal
+NCT of Delhi,South Delhi,Okhla Mandi,Onion,1500,1800,1650,15-03-2023,Quintal
+NCT of Delhi,South Delhi,Okhla Mandi,Potato,1300,1600,1450,22-08-2023,Quintal
+Odisha,Bhubaneswar,Bhubaneswar Mandi,Rice,1500,2000,1750,25-01-2018,Quintal
+Odisha,Bhubaneswar,Bhubaneswar Mandi,Pulses,4500,5000,4750,17-05-2018,Quintal
+Odisha,Cuttack,Cuttack Mandi,Groundnut,4000,4500,4250,20-09-2018,Quintal
+Odisha,Puri,Puri Mandi,Rice,1600,2100,1850,14-02-2019,Quintal
+Odisha,Puri,Puri Mandi,Maize,1400,1800,1600,08-06-2019,Quintal
+Odisha,Sambalpur,Sambalpur Mandi,Cotton,4700,5200,4950,30-10-2019,Quintal
+Odisha,Balasore,Balasore Mandi,Rice,1700,2200,1950,11-03-2020,Quintal
+Odisha,Balasore,Balasore Mandi,Pulses,4600,5100,4850,19-07-2020,Quintal
+Odisha,Rourkela,Rourkela Mandi,Groundnut,4100,4600,4350,21-02-2021,Quintal
+Odisha,Rourkela,Rourkela Mandi,Rice,1750,2250,2000,15-06-2021,Quintal
+Odisha,Berhampur,Berhampur Mandi,Maize,1500,1900,1700,29-01-2022,Quintal
+Odisha,Berhampur,Berhampur Mandi,Cotton,4800,5300,5050,25-05-2022,Quintal
+Odisha,Bhadrak,Bhadrak Mandi,Rice,1800,2300,2050,08-04-2023,Quintal
+Odisha,Bhadrak,Bhadrak Mandi,Pulses,4700,5200,4950,12-08-2023,Quintal
+Punjab,Ludhiana,Ludhiana Mandi,Wheat,1800,2200,2000,03-02-2018,Quintal
+Punjab,Ludhiana,Ludhiana Mandi,Rice,1500,1900,1700,16-06-2018,Quintal
+Punjab,Amritsar,Amritsar Mandi,Cotton,4500,5200,4850,05-10-2018,Quintal
+Punjab,Jalandhar,Jalandhar Mandi,Maize,1600,2000,1800,12-03-2019,Quintal
+Punjab,Jalandhar,Jalandhar Mandi,Wheat,1900,2300,2100,22-07-2019,Quintal
+Punjab,Patiala,Patiala Mandi,Rice,1600,2000,1800,09-11-2019,Quintal
+Punjab,Bathinda,Bathinda Mandi,Cotton,4700,5300,5000,26-01-2020,Quintal
+Punjab,Bathinda,Bathinda Mandi,Maize,1700,2100,1900,18-06-2020,Quintal
+Punjab,Hoshiarpur,Hoshiarpur Mandi,Wheat,2000,2400,2200,07-02-2021,Quintal
+Punjab,Hoshiarpur,Hoshiarpur Mandi,Rice,1700,2100,1900,14-07-2021,Quintal
+Punjab,Moga,Moga Mandi,Cotton,4800,5400,5100,18-01-2022,Quintal
+Punjab,Moga,Moga Mandi,Maize,1800,2200,2000,30-05-2022,Quintal
+Punjab,Faridkot,Faridkot Mandi,Wheat,2100,2500,2300,04-03-2023,Quintal
+Punjab,Faridkot,Faridkot Mandi,Rice,1800,2200,2000,16-08-2023,Quintal
+Rajasthan,Jaipur,Jaipur Mandi,Bajra,1200,1600,1400,15-02-2018,Quintal
+Rajasthan,Jaipur,Jaipur Mandi,Wheat,1800,2200,2000,05-06-2018,Quintal
+Rajasthan,Kota,Kota Mandi,Mustard Seed,4000,4500,4250,28-09-2018,Quintal
+Rajasthan,Jaipur,Jaipur Mandi,Bajra,1300,1700,1500,20-03-2019,Quintal
+Rajasthan,Jaipur,Jaipur Mandi,Wheat,1850,2250,2050,09-07-2019,Quintal
+Rajasthan,Kota,Kota Mandi,Mustard Seed,4100,4600,4350,13-11-2019,Quintal
+Rajasthan,Udaipur,Udaipur Mandi,Maize,1400,1900,1650,24-01-2020,Quintal
+Rajasthan,Udaipur,Udaipur Mandi,Wheat,1900,2300,2100,30-05-2020,Quintal
+Rajasthan,Jodhpur,Jodhpur Mandi,Bajra,1250,1650,1450,11-02-2021,Quintal
+Rajasthan,Jodhpur,Jodhpur Mandi,Maize,1500,2000,1750,22-06-2021,Quintal
+Rajasthan,Bikaner,Bikaner Mandi,Cotton,4500,5200,4850,27-01-2022,Quintal
+Rajasthan,Bikaner,Bikaner Mandi,Wheat,1950,2350,2150,18-05-2022,Quintal
+Rajasthan,Ajmer,Ajmer Mandi,Mustard Seed,4200,4700,4450,02-04-2023,Quintal
+Rajasthan,Ajmer,Ajmer Mandi,Wheat,2000,2400,2200,24-08-2023,Quintal
+Tamil Nadu,Chennai,Chennai Mandi,Rice,1400,1800,1600,22-01-2018,Quintal
+Tamil Nadu,Chennai,Chennai Mandi,Sugarcane,2500,3000,2750,14-05-2018,Quintal
+Tamil Nadu,Coimbatore,Coimbatore Mandi,Cotton,4400,5000,4700,17-09-2018,Quintal
+Tamil Nadu,Madurai,Madurai Mandi,Turmeric,7000,8000,7500,08-02-2019,Quintal
+Tamil Nadu,Madurai,Madurai Mandi,Rice,1500,1900,1700,03-06-2019,Quintal
+Tamil Nadu,Salem,Salem Mandi,Groundnut,4000,4500,4250,19-10-2019,Quintal
+Tamil Nadu,Tiruchirappalli,Tiruchirappalli Mandi,Cotton,4600,5200,4900,12-03-2020,Quintal
+Tamil Nadu,Tiruchirappalli,Tiruchirappalli Mandi,Sugarcane,2600,3100,2850,27-07-2020,Quintal
+Tamil Nadu,Thanjavur,Thanjavur Mandi,Rice,1600,2000,1800,10-02-2021,Quintal
+Tamil Nadu,Thanjavur,Thanjavur Mandi,Turmeric,7200,8200,7700,21-06-2021,Quintal
+Tamil Nadu,Erode,Erode Mandi,Groundnut,4200,4700,4450,18-01-2022,Quintal
+Tamil Nadu,Erode,Erode Mandi,Cotton,4700,5300,5000,26-05-2022,Quintal
+Tamil Nadu,Vellore,Vellore Mandi,Rice,1700,2100,1900,14-03-2023,Quintal
+Tamil Nadu,Vellore,Vellore Mandi,Turmeric,7500,8500,8000,07-08-2023,Quintal
+Telangana,Hyderabad,Hyderabad Mandi,Rice,1600,2100,1850,10-01-2018,Quintal
+Telangana,Hyderabad,Hyderabad Mandi,Cotton,4600,5200,4900,25-05-2018,Quintal
+Telangana,Warangal,Warangal Mandi,Maize,1500,1900,1700,18-11-2018,Quintal
+Telangana,Nizamabad,Nizamabad Mandi,Pulses,5200,5700,5450,12-02-2019,Quintal
+Telangana,Nizamabad,Nizamabad Mandi,Rice,1700,2200,1950,09-07-2019,Quintal
+Telangana,Karimnagar,Karimnagar Mandi,Cotton,4800,5400,5100,27-10-2019,Quintal
+Telangana,Khammam,Khammam Mandi,Maize,1600,2000,1800,20-01-2020,Quintal
+Telangana,Khammam,Khammam Mandi,Pulses,5300,5800,5550,14-06-2020,Quintal
+Telangana,Mahbubnagar,Mahbubnagar Mandi,Rice,1750,2250,2000,11-03-2021,Quintal
+Telangana,Mahbubnagar,Mahbubnagar Mandi,Cotton,4900,5500,5200,05-09-2021,Quintal
+Telangana,Adilabad,Adilabad Mandi,Maize,1650,2050,1850,22-04-2022,Quintal
+Telangana,Adilabad,Adilabad Mandi,Pulses,5400,5900,5650,31-08-2022,Quintal
+Telangana,Hyderabad,Hyderabad Mandi,Rice,1800,2300,2050,17-05-2023,Quintal
+Telangana,Hyderabad,Hyderabad Mandi,Cotton,5000,5600,5300,03-12-2023,Quintal
+Tripura,Agartala,Agartala Mandi,Rice,1800,2200,2000,15-01-2018,Quintal
+Tripura,Agartala,Agartala Mandi,Mustard Seed,4000,4500,4250,22-03-2018,Quintal
+Tripura,Dharmanagar,Dharmanagar Mandi,Potato,1600,2000,1800,10-08-2018,Quintal
+Tripura,Agartala,Agartala Mandi,Rice,1900,2300,2100,05-02-2019,Quintal
+Tripura,Dharmanagar,Dharmanagar Mandi,Maize,1500,1800,1650,19-05-2019,Quintal
+Tripura,Udaipur,Udaipur Mandi,Mustard Seed,4200,4700,4450,23-10-2019,Quintal
+Tripura,Agartala,Agartala Mandi,Potato,1700,2100,1900,12-01-2020,Quintal
+Tripura,Dharmanagar,Dharmanagar Mandi,Rice,2000,2400,2200,17-04-2020,Quintal
+Tripura,Udaipur,Udaipur Mandi,Maize,1600,2000,1800,30-07-2021,Quintal
+Tripura,Agartala,Agartala Mandi,Mustard Seed,4300,4800,4550,15-11-2021,Quintal
+Tripura,Udaipur,Udaipur Mandi,Potato,1800,2200,2000,08-03-2022,Quintal
+Tripura,Agartala,Agartala Mandi,Rice,2100,2500,2300,19-08-2022,Quintal
+Tripura,Dharmanagar,Dharmanagar Mandi,Maize,1700,2100,1900,28-02-2023,Quintal
+Tripura,Udaipur,Udaipur Mandi,Mustard Seed,4400,4900,4650,10-10-2023,Quintal
+Uttar Pradesh,Lucknow,Lucknow Mandi,Wheat,1800,2200,2000,18-01-2018,Quintal
+Uttar Pradesh,Lucknow,Lucknow Mandi,Rice,1500,1900,1700,11-05-2018,Quintal
+Uttar Pradesh,Varanasi,Varanasi Mandi,Sugarcane,2500,3000,2750,24-09-2018,Quintal
+Uttar Pradesh,Kanpur,Kanpur Mandi,Potato,1000,1400,1200,16-02-2019,Quintal
+Uttar Pradesh,Kanpur,Kanpur Mandi,Wheat,1900,2300,2100,07-06-2019,Quintal
+Uttar Pradesh,Allahabad,Allahabad Mandi,Rice,1600,2000,1800,21-10-2019,Quintal
+Uttar Pradesh,Meerut,Meerut Mandi,Sugarcane,2600,3100,2850,05-03-2020,Quintal
+Uttar Pradesh,Meerut,Meerut Mandi,Potato,1100,1500,1300,13-07-2020,Quintal
+Uttar Pradesh,Agra,Agra Mandi,Wheat,2000,2400,2200,02-02-2021,Quintal
+Uttar Pradesh,Agra,Agra Mandi,Rice,1700,2100,1900,18-06-2021,Quintal
+Uttar Pradesh,Gorakhpur,Gorakhpur Mandi,Maize,1600,2000,1800,25-01-2022,Quintal
+Uttar Pradesh,Gorakhpur,Gorakhpur Mandi,Sugarcane,2700,3200,2950,29-05-2022,Quintal
+Uttar Pradesh,Bareilly,Bareilly Mandi,Wheat,2100,2500,2300,09-03-2023,Quintal
+Uttar Pradesh,Bareilly,Bareilly Mandi,Rice,1800,2200,2000,15-08-2023,Quintal
+West Bengal,Kolkata,Kolkata Mandi,Rice,1400,1800,1600,02-02-2018,Quintal
+West Bengal,Kolkata,Kolkata Mandi,Jute,3000,3500,3250,09-06-2018,Quintal
+West Bengal,Siliguri,Siliguri Mandi,Tea,220,270,245,15-10-2018,Quintal
+West Bengal,Howrah,Howrah Mandi,Potato,1000,1300,1150,03-03-2019,Quintal
+West Bengal,Howrah,Howrah Mandi,Rice,1500,1900,1700,11-07-2019,Quintal
+West Bengal,Malda,Malda Mandi,Mango,3000,3500,3250,06-11-2019,Quintal
+West Bengal,Durgapur,Durgapur Mandi,Jute,3200,3700,3450,28-01-2020,Quintal
+West Bengal,Durgapur,Durgapur Mandi,Potato,1100,1400,1250,14-06-2020,Quintal
+West Bengal,Bardhaman,Bardhaman Mandi,Rice,1600,2000,1800,12-03-2021,Quintal
+West Bengal,Bardhaman,Bardhaman Mandi,Mango,3200,3700,3450,08-08-2021,Quintal
+West Bengal,Cooch Behar,Cooch Behar Mandi,Tea,230,280,255,19-02-2022,Quintal
+West Bengal,Cooch Behar,Cooch Behar Mandi,Rice,1700,2100,1900,01-07-2022,Quintal
+West Bengal,Murshidabad,Murshidabad Mandi,Jute,3300,3800,3550,05-04-2023,Quintal
+West Bengal,Murshidabad,Murshidabad Mandi,Potato,1200,1500,1350,23-08-2023,Quintal

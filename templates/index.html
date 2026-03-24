@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Yield and Drought Monitoring</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+  <body>
+    <header>
+      <h1>Crop Yield Prediction and Monitoring Drought</h1>
+      <a href="/predict" class="predict-link">Prediction</a>
+    </header>
+
+
+    <!-- ✅ AI Assistant Icon -->
+    <div class="ai-assistant">
+      <img src="static/AI.png" alt="AI Icon">
+    </div>
+
+    <!-- ✅ AI Popup Message -->
+    <div class="ai-popup">
+      <h3>AgroAI Features Coming Soon...</h3>
+      <p>🌧️ AI-driven Drought Risk Early Warning System</p>
+      <p>🛰️ Satellite Monitoring for Real-time Crop Health</p>
+      <p>💧 Smart Irrigation Scheduling using Rainfall Predictions</p>
+      <p>✨ Stay tuned for powerful AI insights to boost your farm!</p>
+    </div>
+
+
+    <!-- ✅ Inline JavaScript -->
+    <script>
+      const aiIcon = document.querySelector('.ai-assistant');
+      const aiPopup = document.querySelector('.ai-popup');
+
+      // Toggle popup on icon click
+      aiIcon.addEventListener('click', function (event) {
+        aiPopup.style.display = aiPopup.style.display === 'block' ? 'none' : 'block';
+        event.stopPropagation(); // Prevent closing immediately when clicking icon
+      });
+
+      // Close popup if clicked outside
+      document.addEventListener('click', function (event) {
+        if (!aiPopup.contains(event.target) && event.target !== aiIcon) {
+          aiPopup.style.display = 'none';
+        }
+      });
+    </script>
+
+    <div class="main-container">
+      <div class="card top-card">
+        <h2>Top Performers</h2>
+        <div id="topSummary" class="summary-box"></div>
+        <div id="topCrops" class="crop-list"></div>
+      </div>
+
+      <div class="card low-card">
+        <h2>Low Performers</h2>
+        <div id="lowSummary" class="summary-box"></div>
+        <div id="lowCrops" class="crop-list"></div>
+      </div>
+
+      <div class="card details-card" id="cropDetails">
+        <h2>Crop Details</h2>
+        <img src="{{ url_for('static', filename='farm.png') }}" alt="Farm" class="details-image">
+        <p>Select a crop to view details</p>
+      </div>
+    </div>
+
+    <script>
+      const aiTips = {
+        "Sugarcane": "🌱 Tip: Make sure the soil has good air circulation and enough water.<br> ✔ Best Practice: Use drip irrigation and grow pulses alongside to improve soil.",
+        "Onion": "🧅 Tip: Use good quality seeds and keep the soil healthy.<br> ✔ Best Practice: Mulching helps keep moisture and prevents weeds.",
+        "Potato": "🥔 Tip: Choose disease-resistant seeds and water regularly.<br> ✔ Best Practice: Rotate with legumes to keep soil healthy and avoid pests.",
+        "Bajra": "🌾 Tip: Add natural manure and remove weeds often.<br> ✔ Best Practice: Plant early and use organic fertilizers for better yield.",
+        "Barley": "🌿 Tip: Use nitrogen fertilizer and modern farming methods.<br> ✔ Best Practice: Add potassium-rich fertilizer for better grain quality.",
+        "Rice": "🍚 Tip: Save water by using efficient irrigation methods.<br> ✔ Best Practice: Follow the System of Rice Intensification (SRI) to get higher yield.",
+        "Wheat": "🌾 Tip: Grow different crops in rotation and plant at the right time.<br> ✔ Best Practice: Use high-yield seeds and plan irrigation properly.",
+        "Maize": "🌽 Tip: Use balanced fertilizers and keep an eye out for pests.<br> ✔ Best Practice: Check soil quality often and use pesticides when needed.",
+        "Groundnut": "🥜 Tip: Keep proper spacing between plants and use gypsum to help pod growth.<br> ✔ Best Practice: Make sure the soil drains well and does not hold too much water.",
+        "Sunflower": "🌻 Tip: Use hybrid seeds and protect plants from pests.<br> ✔ Best Practice: Add phosphorus fertilizers to help roots grow strong."
+      };
+
+
+
+      let predictions = {};
+
+      function loadData() {
+        fetch('/predictions.json')
+          .then(response => response.json())
+          .then(data => {
+            predictions = data;
+            fillCrops('topCrops', data.topCrops, 'top');
+            fillCrops('lowCrops', data.lowCrops, 'low');
+            generateSummary('topSummary', data.topCrops, 'top');
+            generateSummary('lowSummary', data.lowCrops, 'low');
+          })
+          .catch(err => console.error("Failed to load predictions:", err));
+      }
+
+      function fillCrops(containerId, crops, type) {
+        const container = document.getElementById(containerId);
+        container.innerHTML = '';
+        crops.forEach(crop => {
+          container.innerHTML += `
+          <div class="crop-card ${type}" onclick='showDetails(${JSON.stringify(crop)})'>
+            <div class="crop-card-content">
+              <img src="/static/${crop.crop.toLowerCase()}.png" alt="${crop.crop}" class="crop-image">
+              <p>${crop.crop}</p>
+            </div>
+          </div>`;
+        });
+      }
+
+
+      function showDetails(crop) {
+        const aiTip = aiTips[crop.crop] || "💡 General Tip: Improve soil health, use quality seeds, follow modern techniques.";
+        const detailBox = document.getElementById('cropDetails');
+        const summary = `
+        <div class="summary-text">
+          🌱 <strong>${crop.crop}</strong> predicted yield: <strong>${crop.yield.toFixed(2)} kg/ha</strong><br>
+          📍 <strong>${crop.state}</strong> during <strong>${crop.season}</strong> season.<br>
+          🌧️ Rainfall Required: <strong>${Math.round(crop.avg_rainfall)} mm</strong>.
+        </div>`;
+
+        detailBox.innerHTML = `
+        <h2>${crop.crop} Overview</h2>
+        <img src="/static/${crop.crop.toLowerCase()}.png" alt="${crop.crop}" class="details-image">
+        ${summary}
+        <div class="ai-tip">${aiTip}</div>`;
+      }
+
+      loadData();
+    </script>
+
+    <!-- 🚨 Drought Risk Zone -->
+    <div class="rainfall-container">
+      <div class="rainfall-card rainfall-drought">
+        <h2>Drought Risk Zone</h2>
+        <div id="droughtRotate">Loading...</div>
+      </div>
+
+      <div class="rainfall-card rainfall-normal">
+        <h2>Normal Zone</h2>
+        <div id="normalRotate">Loading...</div>
+      </div>
+    </div>
+
+    <script>
+      let droughtStates = [], normalStates = [], droughtIndex = 0, normalIndex = 0;
+
+      function rotateDrought() {
+        const el = document.getElementById('droughtRotate');
+        if (droughtStates.length > 0) {
+          const row = droughtStates[droughtIndex];
+          el.innerHTML = `<p><b>${row.state}</b>: ${row.annual_rainfall_predicted.toFixed(2)} mm</p>`;
+          droughtIndex = (droughtIndex + 1) % droughtStates.length;
+        } else el.innerHTML = "<p>No Drought States</p>";
+      }
+
+      function rotateNormal() {
+        const el = document.getElementById('normalRotate');
+        if (normalStates.length > 0) {
+          const row = normalStates[normalIndex];
+          el.innerHTML = `<p><b>${row.state}</b>: ${row.annual_rainfall_predicted.toFixed(2)} mm</p>`;
+          normalIndex = (normalIndex + 1) % normalStates.length;
+        } else el.innerHTML = "<p>No Normal States</p>";
+      }
+
+      function loadRainfallData() {
+        fetch('/rainfall_forecast')
+          .then(response => response.json())
+          .then(data => {
+            droughtStates = data.filter(d => d.annual_rainfall_predicted < 800);
+            normalStates = data.filter(d => d.annual_rainfall_predicted >= 800 && d.annual_rainfall_predicted <= 1200);
+            rotateDrought();
+            rotateNormal();
+            setInterval(rotateDrought, 5000);
+            setInterval(rotateNormal, 5000);
+          });
+      }
+
+      loadRainfallData();
+    </script>
+
+    <!-- 📈 Rainfall Forecast & Download -->
+    <div class="rainfall-forecast-section">
+      <h2>Rainfall Forecast</h2>
+      <div style="display: flex; gap: 20px; align-items: center; margin-bottom: 15px;">
+        <button onclick="downloadRainfall()" class="download-btn">Export CSV</button>
+        <select id="stateSelect" onchange="updateRainfallGraph()" class="state-dropdown">
+          <option value="">All States</option>
+          {% for state in states %}
+          <option value="{{ state }}">{{ state }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div class="rainfall-graph">
+        <canvas id="rainfallChart" width="fill" height="600"></canvas>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      let rainfallChart;
+
+      function downloadRainfall() {
+        fetch('/download_rainfall')
+          .then(response => {
+            if (!response.ok) throw new Error('Download failed');
+            return response.blob();
+          })
+          .then(blob => {
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Rainfall_Prediction_2026.csv';
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            window.URL.revokeObjectURL(url);
+          })
+          .catch(error => alert('Failed to download rainfall data.'));
+      }
+
+      function updateRainfallGraph() {
+        const state = document.getElementById('stateSelect').value;
+        if (!state) {
+          loadAllStatesGraph();
+          return;
+        }
+
+        fetch(`/state_month_rainfall?state=${state}`)
+          .then(res => res.json())
+          .then(data => {
+            const months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+            const rainfall = months.map(month => data[month] || 0);
+
+            // ✅ Check if all values are zero
+            const hasData = rainfall.some(value => value > 0);
+            if (!hasData) {
+              document.getElementById('rainfallChart').style.display = 'none';
+              alert("No Rainfall Data Available for " + state);
+              return;
+            } else {
+              document.getElementById('rainfallChart').style.display = 'block';
+            }
+
+            renderRainfallChart(months, rainfall, `${state} Monthly Rainfall (mm)`, 'line', '#2196F3');
+          })
+          .catch(() => alert("Failed to load rainfall data."));
+      }
+
+
+      function renderRainfallChart(labels, data, label, type, color, yMax = null, stepSize = null) {
+        const ctx = document.getElementById('rainfallChart').getContext('2d');
+        if (rainfallChart) rainfallChart.destroy();
+
+        rainfallChart = new Chart(ctx, {
+          type: type,
+          data: {
+            labels: labels,
+            datasets: [{
+              label: label,
+              data: data,
+              backgroundColor: type === 'bar' ? color : 'rgba(0, 123, 255, 0.3)',
+              borderColor: color,
+              fill: type === 'line',
+              borderWidth: 2,
+              tension: 0.4
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                display: true
+              }
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                min: 0,
+                max: yMax,
+                ticks: {
+                  stepSize: stepSize
+                }
+              }
+            }
+          }
+        });
+      }
+
+
+      function loadAllStatesGraph() {
+        fetch('/rainfall_forecast')
+          .then(res => res.json())
+          .then(data => {
+            const states = data.map(d => d.state);
+            const rainfall = data.map(d => d.annual_rainfall_predicted);
+            renderRainfallChart(states, rainfall, 'Annual Rainfall by State (mm)', 'bar', '#4CAF50');
+          })
+          .catch(() => alert("Failed to load rainfall data."));
+      }
+
+      loadAllStatesGraph();
+    </script>
+  </body>
+
+</html>

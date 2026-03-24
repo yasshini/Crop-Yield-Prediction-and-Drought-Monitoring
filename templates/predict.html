@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/prediction_style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <header class="header-container">
+        <a href="{{ url_for('index') }}" class="back-btn">Home</a>
+        <h1>Crop Yeild Prediction and Monitoring Drought</h1>
+    </header>
+
+    <section>
+        <form action="/run_prediction" method="POST">
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="state">State</label>
+                    <select id="state" name="state" required></select>
+                </div>
+
+                <div class="input-group">
+                    <label for="soil">Soil Type</label>
+                    <select id="soil" name="soil" required></select>
+                </div>
+
+                <div class="input-group">
+                    <label for="crop">Crop</label>
+                    <select id="crop" name="crop" required></select>
+                </div>
+
+                <div class="input-group">
+                    <label for="area">Area (hectares)</label>
+                    <input type="number" id="area" name="area" step="any" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="year">Prediction Year</label>
+                    <input type="number" id="year" name="year" value="2026" required>
+                </div>
+            </div>
+
+            <input type="submit" value="Submit" class="btn-submit">
+        </form>
+    </section>
+
+    <!-- Script to populate dropdowns dynamically -->
+    <script>
+        const states = [
+            'Andaman and Nicobar', 'Andhra Pradesh', 'Assam',
+            'Chattisgarh', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh',
+            'Jammu and Kashmir', 'Karnataka', 'Kerala', 'Madhya Pradesh', 'Maharashtra',
+            'Nagaland', 'Odisha', 'Punjab', 'Rajasthan', 'Tamil Nadu', 'Telangana',
+            'Uttar Pradesh', 'Uttarakhand', 'West Bengal'
+        ];
+
+        const crops = [
+            'Wheat', 'Rice', 'Maize', 'Soyabean', 'Potato', 'Onion',
+            'Tomato', 'Groundnut', 'Mustard', 'Bajra'
+        ];
+
+        const soils = ['Alluvial soil', 'Black soil', 'Clayey soil', 'Delta alluvium soil',
+            'Desert soil', 'Inceptisols soil', 'Laterite soil', 'Loamy soil',
+            'Mountain soil', 'Red soil', 'Sandy Clay loam soil', 'Sandy loam soil',
+            'Sandy soil'];
+
+        function populateSelect(id, data) {
+            const select = document.getElementById(id);
+            select.innerHTML = `<option value="">Select ${id.charAt(0).toUpperCase() + id.slice(1)}</option>`;
+            data.forEach(item => {
+                select.innerHTML += `<option value="${item}">${item}</option>`;
+            });
+        }
+
+        populateSelect('state', states);
+        populateSelect('soil', soils);
+        populateSelect('crop', crops);
+    </script>
+
+
+    {% if annual_rainfall %}
+    <section class="glass-card">
+        <h2 class="section-title">Prediction Results</h2>
+
+        <!-- NPK and Climate Side by Side -->
+        <div class="side-by-side">
+
+            <!-- NPK Horizontal Rings -->
+            <div class="npk-rings-horizontal">
+                <div class="npk-ring-box">
+                    <div class="ring-chart-container">
+                        <canvas id="nChart"></canvas>
+                        <div class="npk-value">{{ pred_N|round(2) }}%</div>
+                    </div>
+                    <p>Nitrogen</p>
+                </div>
+
+                <div class="npk-ring-box">
+                    <div class="ring-chart-container">
+                        <canvas id="pChart"></canvas>
+                        <div class="npk-value">{{ pred_P|round(2) }}%</div>
+                    </div>
+                    <p>Phosphorous</p>
+                </div>
+
+                <div class="npk-ring-box">
+                    <div class="ring-chart-container">
+                        <canvas id="kChart"></canvas>
+                        <div class="npk-value">{{ pred_K|round(2) }}%</div>
+                    </div>
+                    <p>Potassium</p>
+                </div>
+            </div>
+
+
+            <!-- Climate Info Card -->
+            <div class="climate-card">
+                <div class="climate-details">
+                    <div class="climate-item">
+                        <span class="icon">🌡️</span>
+                        <span class="label">Temperature:</span>
+                        <span class="value">{{ pred_temp|round(2) }} <span class="unit">°C</span></span>
+                    </div>
+                    <div class="climate-item">
+                        <span class="icon">💧</span>
+                        <span class="label">Humidity:</span>
+                        <span class="value">{{ pred_hum|round(2) }} <span class="unit">%</span></span>
+                    </div>
+                    <div class="climate-item">
+                        <span class="icon">🌧️</span>
+                        <span class="label">Annual Rainfall:</span>
+                        <span class="value">{{ annual_rainfall|round(2) }} <span class="unit">mm</span></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- Yield Info -->
+        <div class="yield-card">
+            <div class="yield-highlight"
+                style="text-align: center; font-size: 1.5rem; font-weight: bold; color: #2e7d32;">
+                Predicted Yield: {{ predicted_yield|round(2) }} tons/hectare
+            </div>
+
+            {% if predicted_yield < 0 %} <div class="yield-warning"
+                style="color: red; font-weight: bold; margin-top: 0.5rem;">
+                ⚠️ Warning: Conditions may not be suitable for this crop.
+        </div>
+        {% elif predicted_yield < 0.5 %} <div class="yield-warning"
+            style="color: orange; font-weight: bold; margin-top: 0.5rem;">
+            ⚠️ Low yield predicted. Consider changing crop.
+            </div>
+            {% endif %}
+            </div>
+
+
+
+            <!-- Next Best Crop Suggestion -->
+            <div class="next-crop">
+                <strong>Best Cropping Months:</strong> {{ best_months_text }}
+            </div>
+
+            <!-- Rainfall Chart -->
+            <div class="rainfall-container">
+                <canvas id="rainfallChart" width="400" height="200"></canvas>
+            </div>
+
+            <!-- NPK Ring Chart Scripts -->
+            <script>
+                const createRing = (ctxId, label, value, color) => {
+                    new Chart(document.getElementById(ctxId), {
+                        type: 'doughnut',
+                        data: {
+                            labels: [label, 'Remaining'],
+                            datasets: [{
+                                data: [value, 100 - value],
+                                backgroundColor: [color, '#e0e0e0'],
+                                borderWidth: 1
+                            }]
+                        },
+                        options: { cutout: '70%', plugins: { legend: { display: false } } }
+                    });
+                };
+                createRing('nChart', 'Nitrogen', {{ pred_N| round(2) }}, '#66bb6a');
+                createRing('pChart', 'Phosphorous', {{ pred_P| round(2) }}, '#ffca28');
+                createRing('kChart', 'Potassium', {{ pred_K| round(2) }}, '#42a5f5');
+            </script>
+
+            <!-- Rainfall Line Chart -->
+            <script>
+                const ctx = document.getElementById('rainfallChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: {{ rainfall_data['months'] | tojson }},
+                    datasets: [{
+                        label: 'Monthly Rainfall (mm)',
+                        data: {{ rainfall_data['values'] | tojson }},
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    fill: true,
+                    tension: 0.4
+          }]
+        },
+                    options: {
+                    responsive: true,
+                    scales: {
+                        y: { beginAtZero: true, title: { display: true, text: 'Rainfall (mm)' } },
+                        x: { title: { display: true, text: 'Month' } }
+                    }
+                }
+      });
+            </script>
+
+    </section>
+    {% endif %}
+
+</body>
+
+</html>
