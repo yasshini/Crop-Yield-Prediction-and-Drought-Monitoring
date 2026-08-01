@@ -21,18 +21,7 @@ def full_prediction(user_state, user_soil, user_crop, user_area, predict_year):
     crop_enc = le_crop.transform([user_crop])[0]
 
     # Predict Monthly Rainfall
-    # rainfall_input = pd.DataFrame([[state_enc, predict_year]], columns=['state_enc', 'year'])
-    # monthly_rainfall = rainfall_model.predict(rainfall_input)[0]
-     
-    print("State:", user_state)
-    print("Soil:", user_soil)
-    print("Crop:", user_crop)
-    print("Year:", predict_year)
-
-    rainfall_input = pd.DataFrame([[state_enc, predict_year]], columns=['state_enc', 'year'])   
-    print(rainfall_input)
-    print("Model expects:", rainfall_model.estimators_[0].feature_names_in_)
-
+    rainfall_input = pd.DataFrame([[state_enc, predict_year]], columns=['state_enc', 'year'])
     monthly_rainfall = rainfall_model.predict(rainfall_input)[0]
     annual_rainfall = np.sum(monthly_rainfall)
 
